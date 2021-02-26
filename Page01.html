@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postavi boju</title>
+</head>
+<body>
+    <form action="">
+        <select name="" id="Select1" onchange="Send()">
+            <option>Choose color</option>
+            <option>lightgreen</option>
+            <option>lightblue</option>
+            <option>red</option>
+        </select>
+    </form>
+
+    <script>
+        function Send() {
+            var Select1 = document.getElementById("Select1")
+            sessionStorage.Color = Select1.value;
+            location.href = "/Page02.html";
+        }
+    </script>
+</body>
+</html>
